@@ -1,0 +1,57 @@
+void main() {
+  //  lista de numeros
+  List<int> numeros = [1, 2, 3, 4, 5];
+  
+  // lista de colores en cadena
+  List<String> colores = ['rojo', 'verde', 'azul'];
+  
+  // imprimir el primer numero de la lista numeros
+  print("Primer numero en la lista: ${numeros[0]}");
+  
+  // imprimir el segundo color de la lista de colores
+  print("Segundo color de la lista: ${colores[1]}");
+  
+  // agregar el numero 6 a la lista de colores
+  numeros.add(6);
+  
+  // Añadir la cadena 'amarillo' a la lista colores
+  colores.add('amarillo');
+  
+  // imprimir todos los numeros de la lista numeros
+  print("Los numeros dentro de la lista son:");
+  for (int numero in numeros) {
+    print(numero);
+  }
+  
+  // imprimir todos los colores de la lista colores
+  print("Los colores dentro de la lista son:");
+  for (String color in colores) {
+    print(color);
+  }
+}
+ void main() {
+  // Mapa para almacenar la data de la persona
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 30,
+    'ciudad': 'Madrid'
+  };
+  
+  // acceder al mapa para rescatar el valor de nombre e imprimirlo
+  print("Nombre: ${persona['nombre']}");
+  
+  // Rescatar el valor de la edad e imprimirlo en consola
+  print("Edad: ${persona['edad']}");
+  
+  // Modificar el valor actual de 30 a 35
+  persona['edad'] = 35;
+  
+  // Agregar un dato mas de la persona como la profesión
+  persona['profesión'] = 'Médico';
+  
+  // Imprimir cada clave y valor del mapa en la consola
+  print("Información de la persona:");
+  persona.forEach((clave, valor) {
+    print("$clave: $valor");
+  });
+}
